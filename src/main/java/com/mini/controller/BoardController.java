@@ -13,9 +13,9 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 	
-	@GetMapping(value = "/board/write.do")
+	@GetMapping(value = "/board/index.do")
 	public String openBoardWrite(Model model) {
-		return "board/write";
+		return "board/index";
 	}
 
 }
