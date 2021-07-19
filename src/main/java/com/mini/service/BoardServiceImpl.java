@@ -10,11 +10,12 @@ import com.mini.domain.BoardDTO;
 import com.mini.mapper.BoardMapper;
 
 @Service
-public class BoardServiceImpl {
+public class BoardServiceImpl implements BoardService {
+	
 	@Autowired
 	private BoardMapper boardMapper;
 
-	//@Override
+	@Override
 	public boolean registerBoard(BoardDTO params) {
 		int queryResult = 0;
 
@@ -27,12 +28,12 @@ public class BoardServiceImpl {
 		return (queryResult == 1) ? true : false;
 	}
 
-	//@Override
+	@Override
 	public BoardDTO getBoardDetail(Long idx) {
 		return boardMapper.selectBoardDetail(idx);
 	}
 
-	//@Override
+	@Override
 	public boolean deleteBoard(Long idx) {
 		int queryResult = 0;
 
@@ -45,7 +46,7 @@ public class BoardServiceImpl {
 		return (queryResult == 1) ? true : false;
 	}
 
-	//@Override
+	@Override
 	public List<BoardDTO> getBoardList() {
 		List<BoardDTO> boardList = Collections.emptyList();
 
@@ -57,4 +58,5 @@ public class BoardServiceImpl {
 
 		return boardList;
 	}
+
 }
