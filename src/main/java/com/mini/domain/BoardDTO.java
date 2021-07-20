@@ -18,7 +18,7 @@ public class BoardDTO {
 
 	/** 조회 수 */
 	private int viewCnt;
-
+ 
 	/** 공지 여부 */
 	private String noticeYn;
 

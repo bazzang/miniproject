@@ -9,7 +9,7 @@ import com.mini.domain.BoardDTO;
 
 @Mapper
 public interface BoardMapper {
-
+ 
 	public int insertBoard(BoardDTO params);
 
 	public BoardDTO selectBoardDetail(Long idx);

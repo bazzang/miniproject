@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.mini.domain.BoardDTO;
 import com.mini.mapper.BoardMapper;
-
+ 
 @Service
 public class BoardServiceImpl implements BoardService {
 	

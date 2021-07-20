@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import com.mini.service.BoardService;
 
 @Controller
-public class BoardController {
+public class BoardController { 
 
 	@Autowired
 	private BoardService boardService;
